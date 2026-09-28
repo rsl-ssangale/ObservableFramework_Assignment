@@ -1,17 +1,12 @@
-//
-//  ObservationFramework_AssignmentApp.swift
-//  ObservationFramework_Assignment
-//
-//  Created by Sandeep Sangale on 28/09/26.
-//
-
 import SwiftUI
 
 @main
 struct ObservationFramework_AssignmentApp: App {
+    @State private var library = Library()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(library)
         }
     }
 }
